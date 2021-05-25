@@ -1,0 +1,315 @@
+
+/*---------------------------------------
+       General           
+  -----------------------------------------*/
+  @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,500&display=swap');
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    color:black;
+  }
+  h1:before, h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+  }
+  h1:before {
+    margin-right: 10px
+  }
+  h1:after {
+    margin-left: 10px
+  }
+
+/*---------------------------------------
+      BODY           
+  -----------------------------------------*/
+
+  body {
+    background-image: url("../images/background4.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+   /*  background: linear-gradient(270deg, rgb(34, 28, 145) 0%, rgb(14, 14, 236) 35%, rgb(134, 44, 146) 100%);
+     */
+    color:black;
+    font-family: 'Zilla Slab', serif;
+   
+    text-decoration:none;}
+/*---------------------------------------
+      Menu          
+  -----------------------------------------*/
+
+  header{
+    display:flex;
+    flex-flow:nowrap row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 30px 10%;
+    
+  }
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    text-decoration: none;
+    
+  }
+  #menu
+  {
+    background-image: url("../images/background3.jpg"); 
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-size:cover;
+  
+    
+    padding: 10px;
+    opacity: 0.9;
+  }
+  .logo
+  {
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    transition: all .2s ease-in-out;
+  }
+  .logo:hover
+  {
+    -webkit-transform: scaleX(2.5);
+    transform: scaleX(2.5);  
+  }
+  .nav__links
+  {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .nav__links div a{
+    padding: 20px 20px;
+  }
+
+  .nav__links div a
+  {
+    transition: all 0.3 ease-out 0s;
+    text-decoration: none;
+    color:purple;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .nav__links div a:hover
+  {
+    color:red;
+
+    
+  }
+ 
+  .link:hover
+  {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+    border-radius: 50px;
+    border-color:white;
+   
+
+  }
+
+  /*---------------------------------------
+     Chestionar         
+  -----------------------------------------*/
+.chestionarClass
+{
+  text-align: center;
+}
+.chestionarClass p
+{
+  margin-top:2em;
+  font-weight: 900;
+}
+.chestionarClass h3
+{
+  margin-top:2em;
+  font-weight: 300;
+}
+.chestionarClass #submit
+{
+  font-weight: 900;
+  width: 10em;
+  height: 2em;
+  margin:3em 0 3em 0;
+}
+.chestionarClass #submit:hover
+{
+  color:red;
+}
+
+  /*---------------------------------------
+     Autentificare         
+  -----------------------------------------*/
+.titluAutentificare
+{
+  font-weight: 700;
+  color:purple;
+  font-size: large;
+  text-align: center;
+}
+
+#formAutentificare
+{
+  text-align: center;
+}
+.mesaje
+{
+  margin-top:3em;
+  margin-bottom: 3em;
+}
+.warning
+{
+  text-align: center;
+  color: red;
+  font-weight: 900;
+  font-size: larger;
+}
+.Halt
+{
+  padding: 2em;
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: 0.3em 0.3em 0.5em rgba(0,0,0,0.3 );
+  text-shadow: 0.5rem 0.5rem 0.8rem rgba(0,0,0,0.5);
+  width: 20em;
+  margin:3em auto 3em auto;
+  text-align: left;
+
+  font-size: large;
+  font-weight: 700;
+  color:mediumslateblue;
+}
+.Halt p
+{
+  margin-top:0.5em;
+}
+#form-autentificare
+{
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: 0.3em 0.3em 0.5em rgba(0,0,0,0.3 );
+  text-shadow: 0.5rem 0.5rem 0.8rem rgba(0,0,0,0.5);
+  width: 20em;
+  margin:3em auto 3em auto;
+  text-align: left;
+
+  font-size: large;
+  font-weight: 700;
+  color:purple;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+#form-autentificare #submit
+{
+  width: 10em;
+  margin-left: 6em;
+  
+}
+  /*---------------------------------------
+     Baze de date         
+  -----------------------------------------*/
+
+.three-buttons
+{
+  text-align:center;
+  background-color: rgba(0,0,0,0.4);
+  box-shadow: 0.3em 0.3em 0.5em rgba(0,0,0,0.3 );
+  text-shadow: 0.5rem 0.5rem 0.8rem rgba(0,0,0,0.5);
+  padding:2em 0 2em 0;
+  width: 20em;
+  margin:0 auto 0 auto;
+
+}
+.three-buttons form
+{
+  margin:0.3em auto 0.3em auto;
+  width: 4em;
+}
+
+.titluProduse
+{
+  margin-top:3em;
+  margin-bottom:2em;
+}
+.center
+{
+  
+  margin: 0 auto 0 auto;
+}
+
+   /*---------------------------------------
+      FOOTER           
+  -----------------------------------------*/ 
+.footer
+{
+  margin-bottom: 30px;
+}
+ footer
+ {
+   color:white;
+   padding:100px 10px 100px 10px;
+   background-image: url("../images/flower2.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size:cover;
+
+ }
+
+ footer .tuna
+ {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-evenly;
+   padding: 50px 0 20px 0;
+  background-color: rgba(0,0,0,0.9);
+  box-shadow: 0.3em 0.3em 0.5em rgba(0,0,0,0.3   );
+  text-shadow: 0.5rem 0.5rem 0.8rem rgba(0,0,0,0.5);
+  text-align: center;
+  font-size: 30px;
+ }
+ .author
+ {
+    margin-right:10px;
+
+ }
+ .author:hover
+ {
+   color: red;
+ }
+ .tip:hover
+ {
+  color:pink;
+  cursor:not-allowed;
+ }
+
+ .logo3
+ {
+   cursor: pointer;
+   width: 10%;
+   height: 10%;
+   transition: all 1s ease-in-out;
+ }
+ .logo3:hover
+ {
+         
+
+         width: 15%;
+         height: 15%;
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+         
+ }
+
+

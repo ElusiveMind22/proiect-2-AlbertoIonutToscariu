@@ -1,0 +1,11 @@
+<%if(fullname) {%> 
+
+<h1>Vizualizare Cos!</h1>
+<%} %> 
+<%if(!fullname) {%> 
+    <h1>OOPSY!</h1>
+    <div style="text-align: center" class="mesaje">
+        <h2 class="warning">Trebuie să te autentifici mai întâi!</h2>
+        <a  href="/autentificare">Autentificare!</a>
+    </div>
+    <%} %> 

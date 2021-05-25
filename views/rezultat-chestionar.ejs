@@ -1,0 +1,37 @@
+<div class="chestionarClass">
+<%var raspuns; var raspunsuriCorecte = 0;%>
+<h1>Rezultatele la chestionare:</h1>
+<h3>Întrebarea 1: <%= intrebari[0].intrebare%></h3>
+<p>Răspunsul tău este <%= intrebari[0].variante[rasp.intrebareRadio0]%> , iar cel corect este <%= intrebari[0].variante[intrebari[0].corect]%> </p>
+<%if (rasp.intrebareRadio0 == intrebari[0].corect )raspunsuriCorecte+=1;%>
+
+
+<h3>Întrebarea 2: <%= intrebari[1].intrebare%></h3>
+<p>Răspunsul tău este <%= intrebari[1].variante[rasp.intrebareRadio1]%> , iar cel corect este <%= intrebari[1].variante[intrebari[1].corect]%> </p>
+<%if (rasp.intrebareRadio1 == intrebari[1].corect )raspunsuriCorecte+=1;%>
+
+
+<h3>Întrebarea 3: <%= intrebari[2].intrebare%></h3>
+<p>Răspunsul tău este <%= intrebari[2].variante[rasp.intrebareRadio2]%> , iar cel corect este <%= intrebari[2].variante[intrebari[2].corect]%> </p>
+<%if (rasp.intrebareRadio2 == intrebari[2].corect )raspunsuriCorecte+=1;%>
+
+<h3>Întrebarea 4: <%= intrebari[3].intrebare%></h3>
+<p>Răspunsul tău este <%= intrebari[3].variante[rasp.intrebareRadio3]%> , iar cel corect este <%= intrebari[3].variante[intrebari[3].corect]%> </p>
+<%if (rasp.intrebareRadio3 == intrebari[3].corect )raspunsuriCorecte+=1;%>
+
+<h3>Întrebarea 5: <%= intrebari[4].intrebare%></h3>
+<p>Răspunsul tău este <%= intrebari[4].variante[rasp.intrebareRadio4]%> , iar cel corect este <%= intrebari[4].variante[intrebari[4].corect]%> </p>
+<%if (rasp.intrebareRadio4 == intrebari[4].corect )raspunsuriCorecte+=1;%>
+
+<h3>Întrebarea 6: <%= intrebari[5].intrebare%></h3>
+<p>Răspunsul tău este <%= intrebari[5].variante[rasp.intrebareRadio5]%> , iar cel corect este <%= intrebari[5].variante[intrebari[5].corect]%> </p>
+<%if (rasp.intrebareRadio5 == intrebari[5].corect ) raspunsuriCorecte+=1;%>
+
+<h3>Întrebarea 7: <%= intrebari[6].intrebare%></h3>
+<p>Răspunsul tău este <%= intrebari[6].variante[rasp.intrebareRadio6]%> , iar cel corect este <%= intrebari[6].variante[intrebari[6].corect]%> </p>
+<%if (rasp.intrebareRadio6 == intrebari[6].corect ) raspunsuriCorecte+=1;%>
+
+
+<p style="color:purple;">Răspunsuri corecte: <%=raspunsuriCorecte%> din 7</p>
+<p style="margin-bottom: 3em;">Rata de succes: <%=raspunsuriCorecte/7 *100 %> %</p>
+</div>

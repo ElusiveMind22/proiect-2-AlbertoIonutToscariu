@@ -1,0 +1,38 @@
+{"listaIntrebari" : [
+    {
+        "intrebare": "Care este țara supranumită și țara lalelelor?",
+        "variante": ["Spania", "Belgia", "Olanda", "Lichtenstein"],
+        "corect": "2"
+    },
+{
+    "intrebare": "Care dintre acestea este planta ce sta la baza preparării de ceai? ",
+    "variante": ["Camellia sinensis", "Cormobionta","Urzica ", " Bostanul"],
+    "corect": "0"
+    },
+{
+    "intrebare": "Care dintre aceste flori nu poate avea culoarea violet?",
+    "variante": ["Toporași", "Regina-Nopții", "Floare de cactus", "Păpădia"],
+    "corect": "3"
+    },
+{
+    "intrebare": "De unde provine floarea de lotus?",
+    "variante": ["Norvegia", "Japonia", "Italia", "Albania"],
+    "corect": "1"
+    },
+{
+    "intrebare": "Ce semnifică trandafirul alb?",
+    "variante": ["Moarte", "Iubire", "Ură", "Puritate"],
+    "corect": "3"
+    },
+    {
+    "intrebare": "Care dintre aceste flori nu are spini?",
+    "variante": ["Cactus", "Lisianthus", "Trandafir", "Lalea"],
+    "corect": "1"
+    },
+    {
+    "intrebare": "Care este simbolul primăverii?",
+    "variante": ["Ghiocelul", "Păpădia", "Laleaua", "Garoafa"],
+     "corect": "0"
+        }
+
+]}

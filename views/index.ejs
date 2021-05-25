@@ -1,0 +1,60 @@
+<h1>Bine ai venit!</h1>
+
+<%if(fullname) {%> 
+<div class="Halt">   
+    <p>Buna ziuă, <%=username%>!</p>
+    <p>Dragă, <%=fullname%>, sper ca ati avut o zi minunată!</p>
+</div>  
+<div class = "three-buttons">
+
+<form action="/creare-db" method="POST">
+    <button type="submit">Creaza Database</button>
+</form>
+<form action="/inserare-db" method="POST">
+    <button type="submit">Incarca DataBase</button>
+</form>
+<form action="/inchide-db" method="POST">
+    <button type="submit">Stergere DataBase</button>
+</form>
+</div>
+
+<%var i=0;%>
+<h1 class="titluProduse">Produse:</h1>
+
+<%if(rows) {%> 
+<table class="center">
+
+   
+
+    <tr>
+      <th>ID</th>
+      <th>Nume_Produs</th>
+      <th>Cantitate</th>
+      <th>Pret</th>
+      <th>Button</th>
+    </tr>
+    <% for(i=0;i<5;i++) { %>
+    <tr>
+        <% for(var j=0;j<4;j++) { %>
+            
+        <td><%=rows[i][j]%></td>
+        <%}%>
+        <td><form action="/adaugare_cos" method="POST">
+            <input type="hidden" name="id" value="idProdus">
+            <input type="submit" id="buttonShop<%=i%>" name="buttonShop<%=i%>" value="Adaugă în shop!">
+        </form></td>
+    </tr>
+    <%}%>
+
+
+  </table>
+  <%} %> 
+  <%} %> 
+
+
+<div class = "mesaje">
+<div class="titluAutentificare">Pentru a vă autentifica, apăsați <a href="/autentificare">Autentificare</a></div>
+<%if(fullname) {%> 
+<div class="titluAutentificare">Pentru a vă deconecta, apăsați <a href="/deconectare">Deconectare</a></div>
+<%} %> 
+</div>

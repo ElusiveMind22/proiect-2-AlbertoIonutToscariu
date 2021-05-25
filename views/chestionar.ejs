@@ -1,0 +1,95 @@
+<%if(fullname) {%> 
+<div class="chestionarClass">
+
+    <h1>Întrebări:</h1>
+
+  
+        <div class="Halt">   
+            <p>Hey, <%=username%>!</p>
+            <p>Sper că ești gata de un quiz!</p>
+        </div>   
+ 
+
+    <form id="form1" action="rezultat-chestionar" method="POST">
+    <p>1.<%= intrebari[0].intrebare%></p>
+    <input name="intrebareRadio0" type="radio" id="intrebare0r1" value = "0">
+    <label><%= intrebari[0].variante[0]%></label><br>
+    <input name="intrebareRadio0" type="radio" id="intrebare0r2" value = "1" >
+    <label><%= intrebari[0].variante[1]%></label><br>
+    <input name="intrebareRadio0" type="radio" id="intrebare0r3" value = "2" >
+    <label><%= intrebari[0].variante[2]%></label><br>
+    <input name="intrebareRadio0" type="radio" id="intrebare0r4" value = "3">
+    <label><%= intrebari[0].variante[3]%></label><br>
+
+    <p>2.<%= intrebari[1].intrebare%></p>
+    <input name="intrebareRadio1" type="radio" id="intrebare1r1" value = "0">
+    <label><%= intrebari[1].variante[0]%></label><br>
+    <input name="intrebareRadio1" type="radio" id="intrebare1r2" value = "1">
+    <label><%= intrebari[1].variante[1]%></label><br>
+    <input name="intrebareRadio1" type="radio" id="intrebare1r3" value = "2">
+    <label><%= intrebari[1].variante[2]%></label><br>
+    <input name="intrebareRadio1" type="radio" id="intrebare1r4" value = "3">
+    <label><%= intrebari[1].variante[3]%></label><br>
+
+    <p>3.<%= intrebari[2].intrebare%></p>
+    <input name="intrebareRadio2" type="radio" id="intrebare2r1" value = "0">
+    <label><%= intrebari[2].variante[0]%></label><br>
+    <input name="intrebareRadio2" type="radio" id="intrebare2r2" value = "1">
+    <label><%= intrebari[2].variante[1]%></label><br>
+    <input name="intrebareRadio2" type="radio" id="intrebare2r3" value = "2">
+    <label><%= intrebari[2].variante[2]%></label><br>
+    <input name="intrebareRadio2" type="radio" id="intrebare2r4" value = "3">
+    <label><%= intrebari[2].variante[3]%></label><br>
+
+    <p>4.<%= intrebari[3].intrebare%></p>
+    <input name="intrebareRadio3" type="radio" id="intrebare3r1" value = "0">
+    <label><%= intrebari[3].variante[0]%></label><br>
+    <input name="intrebareRadio3" type="radio" id="intrebare3r2" value = "1">
+    <label><%= intrebari[3].variante[1]%></label><br>
+    <input name="intrebareRadio3" type="radio" id="intrebare3r3" value = "2">
+    <label><%= intrebari[3].variante[2]%></label><br>
+    <input name="intrebareRadio3" type="radio" id="intrebare3r4" value = "3">
+    <label><%= intrebari[3].variante[3]%></label><br>
+
+    <p>5.<%= intrebari[4].intrebare%></p>
+    <input name="intrebareRadio4" type="radio" id="intrebare4r1" value = "0">
+    <label><%= intrebari[4].variante[0]%></label><br>
+    <input name="intrebareRadio4" type="radio" id="intrebare4r2" value = "1">
+    <label><%= intrebari[4].variante[1]%></label><br>
+    <input name="intrebareRadio4" type="radio" id="intrebare4r3" value = "2">
+    <label><%= intrebari[4].variante[2]%></label><br>
+    <input name="intrebareRadio4" type="radio" id="intrebare4r4" value = "3">
+    <label><%= intrebari[4].variante[3]%></label><br>
+
+    <p>6.<%= intrebari[5].intrebare%></p>
+    <input name="intrebareRadio5" type="radio" id="intrebare5r1" value = "0">
+    <label><%= intrebari[5].variante[0]%></label><br>
+    <input name="intrebareRadio5" type="radio" id="intrebare5r2" value = "1">
+    <label><%= intrebari[5].variante[1]%></label><br>
+    <input name="intrebareRadio5" type="radio" id="intrebare5r3" value = "2">
+    <label><%= intrebari[5].variante[2]%></label><br>
+    <input name="intrebareRadio5" type="radio" id="intrebare5r4" value = "3">
+    <label><%= intrebari[5].variante[3]%></label><br>
+
+    <p>7.<%= intrebari[6].intrebare%></p>
+    <input name="intrebareRadio6" type="radio" id="intrebare6r1" value = "0">
+    <label><%= intrebari[6].variante[0]%></label><br>
+    <input name="intrebareRadio6" type="radio" id="intrebare6r2" value = "1">
+    <label><%= intrebari[6].variante[1]%></label><br>
+    <input name="intrebareRadio6" type="radio" id="intrebare6r3" value = "2">
+    <label><%= intrebari[6].variante[2]%></label><br>
+    <input name="intrebareRadio6" type="radio" id="intrebare6r4" value = "3">
+    <label><%= intrebari[6].variante[3]%></label><br>
+
+    <input type="submit" id="submit" value="submit">
+    </form>
+</div>
+<%} %> 
+
+<%if(!fullname) {%> 
+    <h1>OOPSY!</h1>
+    <div style="text-align: center" class="mesaje">
+        <h2 class="warning">Trebuie să te autentifici mai întâi!</h2>
+        <a  href="/autentificare">Autentificare!</a>
+    </div>
+    <%} %> 

@@ -1,0 +1,16 @@
+<h1 style="margin-bottom: 3em;">Autentificare</h1>
+<form id="form-autentificare" action="verificare-autentificare" method="POST">
+    
+    
+    <%if (error){ %>
+        <p style="color:red;" ><%=error%></p>
+    <% }%>
+  
+    <label > Nume utilizator: </label>
+    <input type="text"  name="Username"><br>         
+    <label > Parolă: </label>
+    <input type="password"  name="Password"><br>
+
+    <input type="submit"  value="Autentificare">
+  
+</form>
